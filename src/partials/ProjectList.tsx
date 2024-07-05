@@ -16,7 +16,7 @@ const ProjectList = () => (
   >
     <div className="flex flex-col gap-6">
       <Project
-        name="Simple-Clipboard-Translator"
+        name="Simple Clipboard Translator"
         description="A simple translator that can monitor your clipboard and translate its content."
         link="https://github.com/Reality361/Simple-Clipboard-Translator"
         img={{
