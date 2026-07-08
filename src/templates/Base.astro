@@ -1,7 +1,7 @@
 ---
-import { Footer } from '@/partials/Footer';
-import { Navbar } from '@/partials/Navbar';
-import { AppConfig } from '@/utils/AppConfig';
+import { Footer } from "@/partials/Footer";
+import { Navbar } from "@/partials/Navbar";
+import { AppConfig } from "@/utils/AppConfig";
 
 export interface Props {
   head: {
@@ -15,18 +15,24 @@ const {
 } = Astro.props as Props;
 ---
 
-<html lang='en'>
+<html lang="en">
   <head>
-    <meta charset='UTF-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
-    <meta name='description' content={description} />
-    <meta name='author' content={AppConfig.author} />
+    <meta name="description" content={description} />
+    <meta name="author" content={AppConfig.author} />
+    <meta name="theme-color" content="#0f172a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content={AppConfig.site_name} />
+    <meta name="twitter:card" content="summary" />
 
-    <link rel='alternate' type='application/rss+xml' href='/rss.xml' />
-    <link rel='icon' type='image/x-icon' href='/favicon.ico' />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   </head>
-  <body class='bg-slate-900 text-gray-100'>
+  <body class="bg-slate-900 text-gray-100">
     <Navbar />
 
     <slot></slot>

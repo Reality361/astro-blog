@@ -4,12 +4,12 @@ import {
   NavMenu,
   NavMenuItem,
   Section,
-} from 'astro-boilerplate-components';
+} from "astro-boilerplate-components";
 
 const Navbar = () => (
   <Section>
     <NavbarTwoColumns>
-      <a href="/">
+      <a href="/" aria-label="Reality361 Blog home">
         <Logo
           icon={
             <svg
@@ -35,7 +35,7 @@ const Navbar = () => (
       <NavMenu>
         <NavMenuItem href="/posts/">Blogs</NavMenuItem>
         <NavMenuItem href="https://github.com/Reality361/">GitHub</NavMenuItem>
-        <NavMenuItem href="https://x.com/reality36101/">Twitter</NavMenuItem>
+        <NavMenuItem href="https://x.com/reality36101/">X</NavMenuItem>
       </NavMenu>
     </NavbarTwoColumns>
   </Section>
